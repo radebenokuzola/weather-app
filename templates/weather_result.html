@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather in {{ weather.city }}</title>
+    <style>
+        body {
+            background-image: url("{{ weather.image_url }}");
+            background-size: cover;
+            background-position: center;
+            color: blue;
+            text-align: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        h1, p {
+            color: white; /* Change the text color to white for better readability */
+            background-color: rgba(0, 0, 0, 0.6); /* Black background with transparency */
+            padding: 10px;
+            border-radius: 5px;
+        }
+        a {
+            color: white;
+            background-color: rgba(0, 0, 0, 0.6); /* Black background for the link */
+            padding: 5px;
+            border-radius: 3px;
+            text-decoration: none; /* Removes the underline */
+        }
+        a:hover {
+            background-color: rgba(0, 0, 0, 0.8); /* Darker background on hover */
+        }
+    </style>
+</head>
+<body>
+    <h1>Weather in {{ weather.city }}</h1>
+    <p>Temperature: {{ weather.temperature }} °C</p>
+    <p>Description: {{ weather.description }}</p>
+    <img src="http://openweathermap.org/img/w/{{ weather.icon }}.png" alt="weather icon">
+    <br>
+    <a href="/">Search another city</a>
+</body>
+</html>
+
+
+

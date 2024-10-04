@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 50px;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.weather-result {
+    margin-top: 20px;
+}
+
+.error {
+    color: red;
+}
+
+.highlight {
+    background-color: black;
+    color: white; /* Change text color to white for better contrast */
+    padding: 2px; /* Optional: Add some padding for better appearance */
+}
