@@ -1,4 +1,4 @@
-﻿# Weather App Project
+
 # Weather App Project
 
 This is a web application built using Python and Flask that fetches weather data for a city entered by the user and displays it along with the current weather conditions. Additionally, it fetches a relevant background image of the city from Google Custom Search API.
